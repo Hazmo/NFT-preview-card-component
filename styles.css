@@ -1,0 +1,160 @@
+
+
+:root {
+   --bg-neutral-500: hsl(217, 54%, 11%);
+   --bg-neutral-400: hsl(216, 50%, 16%);
+   --bg-neutral-300: hsl(215, 32%, 27%);
+   --neutral-100: hsl(0, 0%, 100%);
+
+   --text-primary-500: hsl(215, 51%, 70%);
+   --text-primary-600: hsl(178, 100%, 50%);
+   --text-primary-600-opacity: hsla(178, 100%, 50%, 0.6);
+
+   --weight-300: 300;
+   --weight-500: 400;
+   --weight-600: 600;
+}
+
+body {
+   background-color: var(--bg-neutral-500);
+   display: grid;
+   min-height: 100vh;
+   place-items: center;
+}
+
+.card {
+   font-family: 'Outfit', sans-serif;
+   background-color: var(--bg-neutral-400);
+
+   max-width: 22rem;
+   max-height: max-content;
+
+   padding: 1.5rem;
+
+   border-radius: 1rem;
+}
+
+.card__image__link {
+   position: relative;
+   display: block;
+}
+
+.card__image__main {
+   border-radius: .5rem;
+   margin-bottom: 1.5rem;
+}
+
+.card__image__view__container {
+   position: absolute;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: .5rem;
+
+   background-color: var(--text-primary-600-opacity);
+   opacity: 0;
+}
+
+.card__image__view__container:hover {
+   opacity: 1;
+}
+
+.card__image__view {
+   background-clip: text;
+}
+
+.card__content__title {
+   display: inline-block;
+   font-size: 1.5rem;
+   font-weight: var(--weight-600);
+   color: var(--neutral-100);
+   margin-bottom: 1rem;
+
+   text-decoration: none;
+}
+
+.card__content__title:hover {
+   color: var(--text-primary-600);
+}
+
+.card__content__body {
+   font-weight: var(--weight-300);
+   color: var(--text-primary-500);
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+
+.card__content__info {
+   display: flex;
+   margin-bottom: 1.5rem;
+}
+
+.card__content__eth {
+   display: flex;
+   align-items: center;
+}
+
+.card__content__eth__icon {
+   margin-right: .5rem;
+}
+
+.card__content__eth__text {
+   color: var(--text-primary-600);
+   font-weight: var(--weight-600)
+}
+
+.card__content__time {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+
+.card__content__time__icon {
+   margin-right: .5rem;
+}
+
+.card__content__time__text {
+   color: var(--text-primary-500);
+}
+
+.card__divider {
+   border-color: var(--bg-neutral-300);
+   border-style: solid;
+   margin-bottom: 1rem;
+}
+
+.card__footer {
+   display: flex;
+   align-items: center;
+}
+
+.card__footer__avatar {
+   border: 2rem;
+   border-width: 0.075rem;
+   border-color: var(--neutral-100);
+   border-style: solid;
+   border-radius: 50%;
+   max-width: 2rem;
+   max-height: 2rem;
+
+   margin-right: 0.75rem;
+
+}
+
+.card__footer__credit {
+   color: var(--text-primary-500);
+}
+
+.card__footer__credit a {
+   color: var(--neutral-100);
+   text-decoration: none;
+}
+
+.card__footer__credit a:hover {
+   color: var(--text-primary-600);
+}
